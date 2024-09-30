@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <!-- LinearLayout tüm içerikleri tutar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Skor tabelası -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/xScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/x_o"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/oScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/o_o"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/drawScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beraber_o"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Oyun durumu için TextView -->
+        <TextView
+            android:id="@+id/gameStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x_turn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Oyun tahtası için GridLayout -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="0" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="1"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="2"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="3" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="4" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="5" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="placeSymbol"
+                android:tag="6"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="7" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="placeSymbol"
+                android:tag="8" />
+        </GridLayout>
+
+        <!-- Oyunu sıfırlamak için buton -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/reset"
+            android:onClick="resetGame"
+            android:textSize="18sp"
+            android:background="@drawable/button_reset_background" />
+    </LinearLayout>
+
+    <!-- Kazanan çizgisi için WinningLineView - En üstte görünmesi için burada -->
+    <com.mobilprogramlar.tictactoe.WinningLineView
+        android:id="@+id/winningLineView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <!-- Havai fişek animasyonu için Lottie - Tam ekran ve en üstte -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fireworksView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/bubble_pop"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"/>
+
+</FrameLayout>

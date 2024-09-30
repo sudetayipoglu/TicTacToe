@@ -1,0 +1,25 @@
+<!-- res/anim/rotate.xml -->
+<!-- 2 tur için 720 derece -->
+<!--
+    Bu animasyon, bir görsel öğeyi, tam ortasından başlayarak 720 derece (iki tam tur) döndürür.
+    Döndürme işlemi 1.5 saniye sürer ve sadece bir kez gerçekleşir.
+    Animasyonun hızında, başlangıçta hızlanma ve sonunda yavaşlama etkisi vardır.
+
+    <rotate>: Bu etiket, döndürme animasyonu tanımlamak için kullanılır.
+    Animasyonun başlangıç açısı 0
+    Animasyonun bitiş açısı 720
+    Pivot noktasının x koordinatı 50% (öğe yatayda ortalanarak döndürülür)
+    Pivot noktasının y koordinatı 50% (öğe düşeyde ortalanarak döndürülür)
+    Animasyonun süresi 1500 milisaniye
+    Animasyonun tekrar sayısı 0 (1 kez demek) (infinite sonsuz tekrar demek)
+    Animasyonun interpolasyonu (Animasyonun hızını ve akışı) @android:interpolator/accelerate_decelerate
+    (accelerate_decelerate interpolatörü, animasyonun başlangıçta hızlanıp sonunda yavaşlamasını sağlar)
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="720"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="1500"
+    android:repeatCount="0"
+    android:interpolator="@android:interpolator/accelerate_decelerate" />

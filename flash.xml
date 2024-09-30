@@ -1,0 +1,22 @@
+<!-- res/anim/flash.xml -->
+<!--
+    Bu animasyon, bir görsel öğeyi başlangıçta tamamen görünür (1.0) hale getirir,
+    sonra 0.3 saniyede tamamen şeffaf (0.0) hale getirir.
+    Bu işlem 5 kez tekrarlanır ve her tekrarda şeffaf hale geldikten sonra tekrar görünür olur (ters animasyon).
+
+
+    <alpha>: Bu etiket, şeffaflık/alpha (görünürlük) animasyonunu tanımlar. Görsel bir öğenin şeffaflık değerini değiştirerek animasyon yaratır.
+    android:duration="300": Bu, animasyonun ne kadar süreceğini belirtir. Buradaki değer milisaniye cinsindendir.
+    android:fromAlpha="1.0": Animasyonun başlangıç şeffaflık değerini belirtir. 1.0 değeri, öğenin tamamen opak (tamamen görünür) olduğu anlamına gelir.
+    android:toAlpha="0.0": Animasyonun bitiş şeffaflık değerini belirtir. 0.0 değeri, öğenin tamamen şeffaf (görünmez) olacağı anlamına gelir.
+    android:repeatMode="reverse": Bu, animasyonun her tekrarlandığında ters yönde oynatılacağını belirtir.
+            Yani animasyon önce şeffaflaşacak (1.0'den 0.0'a) ve sonra tekrar görünür hale gelecektir (0.0'dan 1.0'e).
+    android:repeatCount="5": Bu, animasyonun kaç kez tekrar edeceğini belirtir. 5 değeri, animasyonun 5 kez tekrar edeceğini ifade eder.
+
+ -->
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromAlpha="1.0"
+    android:toAlpha="0.0"
+    android:repeatMode="reverse"
+    android:repeatCount="5" />

@@ -1,0 +1,19 @@
+<!-- bounce.xml -->
+<!--
+    Bu animasyon, bir öğeyi X ve Y eksenlerinde %20 oranında büyütecek.
+    Animasyon 0.5 saniye sürecek ve öğe merkezinden büyüyecek.
+    Animasyon toplamda 4 kez (ilk çalıştırma ve 3 tekrar) gerçekleşecek.
+    Her tekrar sırasında öğe önce büyüyecek, ardından tersine oynatılarak eski boyutuna dönecektir.
+
+ -->
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fromXScale="1"
+    android:toXScale="1.2"
+    android:fromYScale="1"
+    android:toYScale="1.2"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="3"
+    android:repeatMode="reverse" />

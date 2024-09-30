@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"/>
+
+    <Button
+        android:id="@+id/singlePlayerEasyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tek_kolay"
+        android:onClick="startSinglePlayerEasy"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/singlePlayerMediumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tek_orta"
+        android:onClick="startSinglePlayerMedium"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/singlePlayerHardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tek_zor"
+        android:onClick="startSinglePlayerHard"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/twoPlayerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iki_oyuncu"
+        android:onClick="startTwoPlayer"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/dynamicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dinamik_zorluk"
+        android:onClick="startDynamicMode"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/tutorialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egitici_bolum"
+        android:onClick="startTutorialMode"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_background" />
+
+</LinearLayout>

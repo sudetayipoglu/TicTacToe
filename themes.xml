@@ -1,0 +1,12 @@
+<resources>
+    <style name="Base.Theme.TicTacToe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Temanızın diğer özelliklerini buraya ekleyin -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <!-- <item name="android:background">@drawable/button_rounded</item> -->
+    </style>
+
+    <style name="Theme.TicTacToe" parent="Base.Theme.TicTacToe" />
+</resources>

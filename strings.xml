@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="tutorial_welcome">Hoş geldiniz! X ve O oynamayı öğrenmek için ekrandaki adımları takip edin.</string>
+    <string name="x_turn">X\'in Sırası</string>
+    <string name="o_turn">O\'nun Sırası</string>
+    <string name="x_score">X: %1$d</string>
+    <string name="o_score">O: %1$d</string>
+    <string name="draw_score">Beraberlik: %1$d</string>
+    <string name="x_wins">X Kazandı!</string>
+    <string name="o_wins">O Kazandı!</string>
+    <string name="draw">Berabere!</string>
+    <string name="ai_move_called">AI\'nin hamlesi tetiklendi.</string>
+    <string name="difficulty_level">Zorluk Seviyesi: %1$s</string>
+    <string name="ai_move_failed">GERİ DÖNDÜRÜLDÜ AI ÇALIŞMADI.</string>
+    <string name="easy_level">Zorluk Seviyesi: Kolay</string>
+    <string name="default_to_easy">Geçersiz veya boş, Kolay seviyeye geçildi.</string>
+
+    <string name="sira_o">Oynandı! Şimdi O\'nun sırası! Oynamak için O butonuna tıklayın.</string>
+    <string name="sira_x">Oynandı! Şimdi X\'in sırası! Oynamak için X butonuna tıklayın.</string>
+    <string name="x_kazandi_sen_sende">X Kazandı! Harika, şimdi sen dene.</string>
+    <string name="o_kazandi_sen_sende">O Kazandı! Harika, şimdi sen dene.</string>
+    <string name="berabere_sen_dene">Berabere! Şimdi sen dene.</string>
+    <string name="tebarikler_ai_ile_oyna">Tebrikler! Eğitici bölümü tamamladınız. Şimdi yapay zekaya karşı oynayın.</string>
+    <string name="yanlis_hamle">Bu hücre zaten dolu! Başka bir yere hamle yapın.</string>
+    <string name="sen_dene">Şimdi sen dene! Kendi başına oyna ve kazan.</string>
+
+    <string name="reset">Oyunu Sıfırla</string>
+    <string name="beraber_o">Beraberlik: 0</string>
+    <string name="x_o">X: 0</string>
+    <string name="o_o">O: 0</string>
+
+    <string name="tek_kolay">Tek Oyunculu (Kolay)</string>
+    <string name="tek_orta">Tek Oyunculu (Orta)</string>
+    <string name="tek_zor">Tek Oyunculu (Zor)</string>
+    <string name="iki_oyuncu">İki Oyunculu</string>
+    <string name="dinamik_zorluk">Dinamik Zorluk</string>
+    <string name="egitici_bolum">Eğitici Bölüm</string>
+
+
+    <string name="subtitle_MainActivity">www.OssMatematik.Com</string>
+    <string name="paylas_baslik"><b>Tic Tac Toe</b>\n\n</string>
+    <string name="paylas_mesaj">Yks Puanını Kendin HESAPLA.\nTyt ve Ayt puanınızı bu uygulama ile kendiniz hesaplayabilirsiniz,\n\nPaylaşmak İçin <b>Tıklayınız</b>\n\n</string>
+    <string name="paylas_button_mesaj">Paylaşmak İçin Tıklayınız</string>
+    <string name="paylas_link">https://play.google.com/store/apps/details?id=com.mobilprogramlar.MatematikFormullerim</string>
+    <string name="toolbar_baslik_default">Tic Tac Toe</string>
+    <string name="toolbar_altbaslik_default">www.OssMatematik.Com</string>
+    <string name="anasayfa">Ana Sayfa</string>
+    <string name="paylas">Paylaş</string>
+    <string name="ayarlar">Ayarlar</string>
+
+    <!-- Kategori isimleri -->
+    <string-array name="main_topics">
+        <item>Tic Tac Toe</item>
+        <item>Favoriler</item>
+        <item>Uygulamalarımız</item>
+    </string-array>
+
+
+</resources>

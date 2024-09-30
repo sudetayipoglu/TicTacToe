@@ -1,0 +1,19 @@
+<!-- res/anim/color_transition.xml -->
+<!--
+    Bu animasyon, bir öğenin X ve Y eksenlerinde %10 oranında büyümesini sağlar.
+    Animasyon 0.3 saniye sürecek ve büyüme işlemi öğenin merkezinde gerçekleşecektir.
+    Animasyon tamamlandıktan sonra öğe büyümüş halde kalacaktır.
+
+     android:fillAfter="true": Animasyon tamamlandığında öğenin son durumunu korumasını sağlar.
+                Yani, animasyon bittikten sonra öğe yeni boyutunda kalacaktır (1.1x boyutunda).
+ -->
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="1.0"
+    android:toXScale="1.1"
+    android:fromYScale="1.0"
+    android:toYScale="1.1"
+    android:duration="300"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fillAfter="true" />

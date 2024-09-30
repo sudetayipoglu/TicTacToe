@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/anim/flash_animation.xml -->
+<!--
+    Bu animasyon, görsel bir öğeyi hem yatayda hem de dikeyde %50 büyütüp küçültme işlemini içerir.
+    Animasyon, öğeyi tam ortasından ölçeklendirir ve bu işlem 0.5 saniye sürer.
+    Animasyon sonsuz kez tekrarlanır ve her tekrarda büyüme işlemi tersine çevrilerek küçülür ve yeniden büyür.
+
+<set>: Animasyonların bir arada çalıştırılmasına olanak tanıyan bir grup animasyonu ifade eder.
+    birden fazla animasyonu birlikte çalıştırmak için kullanılır.
+
+    <scale>: Bu etiket, bir ölçeklendirme animasyonunu belirtir. Ölçeklendirme, görsel öğenin boyutunu artırma veya küçültme anlamına gelir.
+    <alpha>: Bir animasyonun içindeki nesnenin seviyesini belirler.
+    <rotate>: Bir animasyonun içindeki nesnenin döndürülmesini belirler.
+    <translate>: Bir animasyonun içindeki nesnenin konumunu belirler.
+    <color>: Bir animasyonun içindeki nesnenin rengini belirler.
+    <path>: Bir animasyonun içindeki nesnenin şeklini belirler.
+    <property>: Bir animasyonun içindeki nesnenin özelliklerini belirler.
+
+    android:fromXScale="1.0": Bu, animasyonun yatay eksende (X ekseni) başlangıç ölçeğini belirtir.
+            1.0 değeri, görsel öğenin başlangıçta normal boyutunda olduğunu ifade eder.
+    android:toXScale="1.5": Bu, animasyonun yatay eksende (X ekseni) bitiş ölçeğini belirtir.
+            1.5 değeri, görsel öğenin animasyon sonunda yatayda %50 büyüyeceği anlamına gelir.
+   android:pivotX="50%": Bu, yatay eksende ölçeklendirme işleminin merkezini belirtir.
+            "50%" değeri, animasyonun yatay eksende görsel öğenin ortasında gerçekleşeceğini ifade eder.
+    android:duration="500": Animasyonun ne kadar süreceğini belirtir. Buradaki değer milisaniye cinsindendir.
+             500 değeri, animasyonun 0.5 saniye (500 milisaniye) süreceği anlamına gelir.
+    android:repeatCount="infinite": Animasyonun tekrar sayısını belirtir. Buradaki değer infinite (sonsuz) anlamına gelir.
+    android:repeatMode="reverse": Animasyonun tekrar modunu belirtir. Buradaki değer reverse (ters) anlamına gelir.
+
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="1.1"
+        android:fromYScale="1.0"
+        android:toYScale="1.1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="500"
+        android:repeatCount="5"
+        android:repeatMode="reverse"/>
+</set>

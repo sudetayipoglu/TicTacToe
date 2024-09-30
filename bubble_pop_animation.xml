@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/anim/bubble_pop_animation.xml -->
+<!--
+    Bu animasyon seti, bir baloncuk patlama efektini simüle eder.
+    Öğenin boyutu 0.2 saniye içinde %80'e küçülürken, aynı anda şeffaflaşarak tamamen görünmez hale gelir.
+    Ölçekleme ve şeffaflık animasyonları aynı anda çalışır ve patlama etkisi yaratır.
+
+    <set>: Animasyonların bir arada çalıştırılmasına olanak tanıyan bir grup animasyonu ifade eder.
+            birden fazla animasyonu birlikte çalıştırmak için kullanılır.
+    <scale>: Bu etiket, öğenin boyutunu değiştirir.
+    android:fromXScale="1.0": X ekseninde (yatayda) animasyonun başlangıç ölçeğini belirtir. 1.0 değeri, öğenin orijinal boyutunda olduğu anlamına gelir.
+    android:toXScale="0.8": X ekseninde animasyonun bitiş ölçeğini belirtir. 0.8 değeri, öğenin %80 boyutuna küçüleceği anlamına gelir.
+    android:pivotX="50%": X ekseninde ölçekleme işleminin merkez noktasını belirler. 50%, öğenin yatay merkezini ifade eder.
+    android:duration="200": Animasyonun süresini belirtir. 200 milisaniye yani 0.2 saniye sürecektir.
+
+    <alpha>: Şeffaflık (görünürlük) animasyonunu temsil eder.
+    android:fromAlpha="1.0": Animasyonun başlangıç şeffaflık değeri. 1.0, tamamen opak (görünür) demektir.
+    android:toAlpha="0.0": Animasyonun bitiş şeffaflık değeri. 0.0, tamamen şeffaf (görünmez) demektir.
+    android:duration="200": Animasyonun süresi, 200 milisaniye yani 0.2 saniye sürecektir
+
+ -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="0.8"
+        android:fromYScale="1.0"
+        android:toYScale="0.8"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="200"/>
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="200"/>
+</set>
+

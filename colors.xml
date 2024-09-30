@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#008000</color>
+    <color name="yellow">#FFFFEB3B</color>
+    <color name="red">#FFC00000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="button">#FF6750A4</color>
+
+
+    <color name="nurullah_activityBackgroundColor">#9979D3</color>
+    <color name="nurullah_cardBackgroundColor">#7D2CF1</color>
+    <color name="nurullah_cardTextColor">#ffffff</color>
+    <color name="nurullah_buttonBackgroundColor">#6200EE</color>
+
+    <color name="nurullah_toolbar_rengi">#6200EE</color>
+    <color name="nurullah_metin_rengi_01">#ffffff</color>
+    <color name="colorButtonNormal">#ABABEE</color>     <!-- Butonların rengi. -->
+    <color name="nurullah_metin_rengi_05">#ABABEE</color>
+
+
+
+</resources>
